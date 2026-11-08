@@ -6,6 +6,8 @@ import Sir
 import SirTests
 import Lint
 import LintTests
+import Evm
+import EvmTests
 
 /-! Package-wide gates: a linter runs only in modules that import it, so every module of the
 package must have `Lint.BinderScope` among its transitive imports; and every declaration of
@@ -15,7 +17,7 @@ namespace Audit
 
 open Lean Elab Command
 
-def libs : List String := ["ITree", "ITreeTests", "Host", "Sir", "SirTests", "Lint", "LintTests"]
+def libs : List String := ["ITree", "ITreeTests", "Host", "Sir", "SirTests", "Lint", "LintTests", "Evm", "EvmTests"]
 
 /-- The module names of every `.lean` file of the package's libraries. -/
 def packageModules : IO (Array Name) := do
