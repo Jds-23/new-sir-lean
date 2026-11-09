@@ -61,7 +61,7 @@ Only standard axioms are used (Audit checks this, now over 98 modules).
    Sharing the definitions makes the later SIR↔EVM proof easier either way.
 3. **Static mode:** add an `ExecutionMode` (or `static : Bool`) argument to `Evm.run`?
 4. **Is the 2^32 memory cap acceptable,** or should out-of-gas be modelled properly?
-5. **Test count:** the brief asked for 8–12 tests. There are 12 groups, but about 38 `#guard`
+5. **Test count:** the brief asked for 8–12 tests. There are 12 groups, but 35 `#guard`
    lines plus 5 kernel proofs. Trim if that is too many.
 
 ## Phase 2: EVMYulLean as the reference semantics
